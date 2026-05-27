@@ -1,0 +1,44 @@
+=== SESSION 1 ===
+Question: I just joined the company and I need read-only prod access to debug an issue tomorrow. What do I do? Be specific about the steps and the people I need to talk to.
+
+--- ANSWER ---
+The memory store is empty — this is a fresh start. Let me answer your question directly from the documents, then save what I've learned.
+
+---
+
+## Getting Read-Only Prod Access (Fast Path for Tomorrow)
+
+Since you need access **tomorrow**, the standard process likely won't complete in time — but there's an urgent exception that's perfect for your situation.
+
+### Option A: Urgent / Emergency Access (Recommended for your situation)
+
+If your debugging issue qualifies as urgent (e.g., a P1 incident), the **on-call SRE** can grant you **temporary 24-hour read-only access immediately**, without a pairing session first.
+
+**Steps:**
+1. Go to the `#sre-access-requests` Slack channel.
+2. Open a ticket explaining the urgency and the issue you're debugging.
+3. Tag **your direct manager** AND the **SRE currently on-call** (check PagerDuty for who's on rota this week — it rotates weekly and could be Liu Wei, Sarah Hofmann, or Rachel Wong; note Diego Sanchez is on parental leave through July 2026).
+4. The on-call SRE can grant 24-hour access without a pairing session.
+5. **Important:** You must complete the pairing session within **5 working days** of the grant, or your access is automatically revoked.
+
+### Option B: Standard Process (too slow for tomorrow, but use if not urgent)
+
+For reference, the normal path takes at least a couple of days:
+1. Open a ticket in `#sre-access-requests`.
+2. Tag your manager + the SRE on rota.
+3. The SRE schedules a 30-minute pairing session within 2 working days.
+4. After pairing, the SRE provisions access via Okta — completes within ~4 hours.
+
+---
+
+### Key people to contact
+
+| Who | Why | Slack |
+|---|---|---|
+| **Your direct manager** | Must be tagged on all access requests | (your manager's handle) |
+| **SRE on-call this week** | The one who can grant urgent access — check PagerDuty | @carlosm to find out who |
+| **Carlos Mendes** (Head of SRE) | Owns the on-call rotation; escalate here if you can't reach the on-call SRE | @carlosm |
+
+**Bottom line:** Head to `#sre-access-requests` right now, tag your manager and the on-call SRE, explain you need urgent access to debug an issue tomorrow, and invoke the urgent exception. The on-call SRE is empowered to approve this immediately.
+
+---I've saved everything to memory for future sessions. To recap your action plan: head to `#sre-access-requests` now, invoke the **urgent exception**, and tag your manager plus the on-call SRE from PagerDuty. You can have access as soon as today if the on-call SRE approves it.

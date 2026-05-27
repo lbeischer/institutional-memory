@@ -1,0 +1,43 @@
+=== SESSION 2 ===
+Question: I just joined the company and I need read-only prod access to debug an issue tomorrow. What do I do? Be specific about the steps and the people I need to talk to.
+
+--- ANSWER ---
+The new documents significantly change the answer to this exact question. Let me update memory first, then give you the current answer.---
+
+**What changed from the previous answer:** The old policy required a Slack ticket, an SRE pairing session, and 2 weeks of tenure. All of that has been replaced. **The new policy (effective 2026-05-15) is fully self-service.** Here's exactly what to do:
+
+---
+
+## How to Get Read-Only Prod Access
+
+### ⚠️ First: Check your tenure
+You must have **at least 3 working days** at the company before access can be granted (i.e., you're eligible from **day 4**). If you literally started today or yesterday, this is the hard blocker — the policy has no exception path documented for new joiners under this threshold.
+
+---
+
+### If you've hit 3 working days, here are the steps:
+
+**1. Complete the "Prod Access Foundations" course**
+- Go to the **BTS Learning portal** and find the *Prod Access Foundations* course.
+- It's self-paced, ~90 minutes. Complete it and pass the assessment.
+
+**2. Get your manager's sign-off**
+- Manager approval is required **once** — for the initial certification. This is the only person you need to involve.
+- Loop in your manager now so they're ready to approve as soon as you finish the course.
+
+**3. Request access via the IAM platform**
+- After passing the assessment, you'll receive a **completion email with a link to the IAM platform**.
+- Submit your access request there. Access is granted **just-in-time** and scoped to a **4-hour window**.
+- You can re-request as many times as you need — each new window just requires a new IAM request (no re-approval from your manager after the initial certification).
+
+---
+
+### What you do NOT need to do (old process — no longer applies):
+- ~~Open a Slack ticket in `#sre-access-requests`~~
+- ~~Schedule an SRE pairing session~~
+- ~~Wait 2 weeks of tenure~~
+
+---
+
+### Bottom line on timing for tomorrow
+If you can knock out the ~90-minute course **today**, get your manager's sign-off, and submit the IAM request, you should have your 4-hour access window ready for tomorrow. The only wildcard is whether you've cleared the 3-working-day tenure requirement.
